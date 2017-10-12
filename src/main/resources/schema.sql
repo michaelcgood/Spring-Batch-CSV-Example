@@ -1,6 +1,6 @@
 DROP TABLE animes IF EXISTS;
 CREATE TABLE animes  (
-    id INTEGER,
+    id VARCHAR,
     title VARCHAR(400),
     description VARCHAR(999)
 );
