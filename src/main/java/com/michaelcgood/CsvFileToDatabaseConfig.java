@@ -59,11 +59,11 @@ public class CsvFileToDatabaseConfig {
 
 	@Bean
 	public JdbcBatchItemWriter<AnimeDTO> csvAnimeWriter() {
-		 JdbcBatchItemWriter<AnimeDTO> excelAnimeWriter = new JdbcBatchItemWriter<AnimeDTO>();
-		 excelAnimeWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<AnimeDTO>());
-		 excelAnimeWriter.setSql("INSERT INTO animes (id, title, description) VALUES (:id, :title, :description)");
-		 excelAnimeWriter.setDataSource(dataSource);
-	        return excelAnimeWriter;
+		 JdbcBatchItemWriter<AnimeDTO> csvAnimeWriter = new JdbcBatchItemWriter<AnimeDTO>();
+		 csvAnimeWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<AnimeDTO>());
+		 csvAnimeWriter.setSql("INSERT INTO animes (id, title, description) VALUES (:id, :title, :description)");
+		 csvAnimeWriter.setDataSource(dataSource);
+	        return csvAnimeWriter;
 	}
 
 	 // end reader, writer, and processor
