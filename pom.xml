@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.michaelcgood</groupId>
-	<artifactId>michaelcgood-spring-batch-excel</artifactId>
+	<artifactId>michaelcgood-spring-batch-csv</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>michaelcgood-spring-batch-excel</name>
-	<description>Michael C  Good - Spring Batch Excel Example Application</description>
+	<name>michaelcgood-spring-batch-csvl</name>
+	<description>Michael C  Good - Spring Batch CSV Example Application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
